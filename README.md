@@ -44,27 +44,27 @@ As a blank, I want to be able to blank , so that blank
 
 
 # Model our Data
-	Post
-	Title: string
-	Content: String
--
-	Projects
-	Title: string
-	Description: String
-	Link: string
+  Post
+ 	   Title: string
+     Content: String
 
-	User
-	Devise
+ Projects
+  	Title: string
+   	Description: String
+ 	  Link: string
+
+ User
+    Devise
 
 
 # Thinks through the page we need for app
 
-	Home
-	Posts#index
-	Posts#show
-	Projects#index
-	Project#show
-	Contact
+   	Home
+    Posts#index
+   Posts#show
+   Projects#index
+   Project#show
+   Contact
 
 
 
