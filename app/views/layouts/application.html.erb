@@ -9,13 +9,20 @@
   </head>
   <body>
       <header id="main_navigation" class="clearfix">
-      <a href="index.html" class="name">Roadhouse Films</a>
-  <nav>
-      <%= link_to "Articles", posts_path %>
-      <a href="projects.html">Projects</a>
-      <a href="Contact.html">Contact</a>
-  </nav>
-</header>
-    <%= yield %>
-  </body>
+          <%= link_to "SHOAIB RABBANI", welcome_index_path, class:"name" %>
+         <nav>
+           <%= link_to "Articles", posts_path %>
+           <a href="projects.html">Projects</a>
+           <a href="Contact.html">Contact</a>
+        </nav>
+     </header>
+<%= yield %>
+   <footer id ="main_footer">
+      <p class="copyright"> &copy;2017 Roadhouse Films </p>
+     <nav>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/roadhousefilm/" target="_blank""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+     </nav>
+   </footer>
+</body>
 </html>

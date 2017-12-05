@@ -1,1 +1,28 @@
-<h1>Wellcome World </h1>
+<div class="wrapper wrapper_padding">
+			<div class="col-1 about homepage_content">
+      <h2>About</h2>
+			<hr>
+					<p> I am professional Film maker & concept writer, living in Lahore</p>
+					<p> I can write concept , execute them and edit them <a href="#"> Project</a> </p>
+          <p> So far i have worked with main stream artist such as JAL</p>
+
+			</div>
+			<div class="col-2 homepage_content">
+				<h2>Stuff I have done</h2>
+				<hr>
+				<% @posts.each do |post| %>
+				<h3> <a href="#"><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A,%b,%d") %></p>
+				<% end %>
+			</div>
+			<div class="col-3 homepage_content">
+				<h2>Videos I have directed </h2>
+				<hr>
+				<h3><a href="#"> Parinda by Jal</a></h3>
+				<p class="date"> Vidoe of brand new single of band JAL</p>
+				<h3><a href="#">Laiyan Laiyan by JAL</a></h3>
+				<p class="date">Cover Song of Film Choorian</p>
+				<h3><a href="#">Bekhudi by Mustahsan Khan</a></h3>
+				<p class="date">Fresh song , fresh sound</p>
+		  </div>
+	</div>
