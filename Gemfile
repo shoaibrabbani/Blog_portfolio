@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 ruby '2.3.3'
+gem 'friendly_id', '~> 5.2', '>= 5.2.3'
 gem 'pygments.rb', '~> 1.2'
 gem 'redcarpet', '~> 3.4'
 gem 'font-awesome-sass'
